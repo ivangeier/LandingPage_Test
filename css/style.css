@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+.box {
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    padding: 15px;
+    background-color: #48c5ce;
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: white;
+}
+
+section {
+    padding: 20px;
+    background-image: url(../assets/people.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.formContainer {
+    width: 350px;
+    background-color: rgba(255,255,255, 0.7);
+    padding: 20px;
+    float: right;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.formContainer p {
+    font-size: 20px;
+}
+
+.mb {
+    margin-bottom: 10px;
+}
+
+input, select {
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+    padding: 20px 10px;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: rgb(94, 182, 211);
+    color: white;
+    text-transform: uppercase;
+    font-size: large;
+}
+
+/* Estilizando o dropbox */
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url(../assets/arrow.jpg);
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 10px);
+    background-position-y: center;
+}
+
+footer {
+    background-color: #202121;
+    padding: 40px;
+    text-align: center;
+}
+
+.picture {
+    width: 160px;
+}
+
+.description {
+    color: white;
+    display: inline-block;
+    max-width: 40%;
+    margin-left: 40px;
+    text-align: left;
+}
+
+.description h3, p {
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .formContainer {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .formContainer {
+        width: 100%;
+    }
+
+    .description {
+        display: block;
+        max-width: 90%;       
+        text-align: left;
+        margin: auto;
+        margin-top: 10px;
+        text-align: center;
+    }
+}
